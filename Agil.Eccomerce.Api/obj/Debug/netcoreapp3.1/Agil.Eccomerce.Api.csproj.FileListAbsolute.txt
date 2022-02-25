@@ -53,3 +53,15 @@ D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1
 D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Agil.Eccomerce.Api.deps.json
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Agil.Eccomerce.Api.runtimeconfig.json
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Agil.Eccomerce.Api.runtimeconfig.dev.json
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Agil.Eccomerce.Api.dll
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Agil.Eccomerce.Api.pdb
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.csproj.CoreCompileInputs.cache
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.dll
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.pdb
+D:\AndresGilDAW\EC\Agil.Eccomerce.Api\Agil.Eccomerce.Api\obj\Debug\netcoreapp3.1\Agil.Eccomerce.Api.genruntimeconfig.cache
