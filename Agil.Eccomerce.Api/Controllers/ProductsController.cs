@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Agil.Eccomerce.Api.Data;
 using Agil.Eccomerce.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,17 +19,17 @@ namespace Agil.Eccomerce.Api.Controllers
         [HttpGet]
         public string GetProducts()
         {
-            return "value";
+            return context.products;
         }
 
-        // GET api/<ProductsController>
+        // GET api/<ProductsController>/productId
         [HttpGet("{id}")]
         public string GetProductById(int id)
         {
             return "value";
         }
 
-        // GET api/<ProductsController>
+        // GET api/<ProductsController>/categoryId
         [HttpGet("category/{id}")]
         public string GetProductByCategoryId(Category id)
         {
@@ -41,13 +42,13 @@ namespace Agil.Eccomerce.Api.Controllers
         {
         }
 
-        // PUT api/<ProductsController>/5
+        // PUT api/<ProductsController>/productId
         [HttpPut("{id}")]
         public void Update(int id, [FromBody] Product product)
         {
         }
 
-        // DELETE api/<ProductsController>/5
+        // DELETE api/<ProductsController>/productId
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
