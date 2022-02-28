@@ -16,10 +16,6 @@ namespace Agil.Eccomerce.Api
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            using (var context = new DBContext())
-            {
-                var products = context.Producto.ToList();
-            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

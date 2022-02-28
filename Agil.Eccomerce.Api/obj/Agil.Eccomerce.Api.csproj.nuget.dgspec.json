@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj": {}
+    "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj": {}
   },
   "projects": {
-    "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj": {
+    "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
+        "projectUniqueName": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
         "projectName": "Agil.Eccomerce.Api",
-        "projectPath": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
-        "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
-        "outputPath": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\obj\\",
+        "projectPath": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
+        "packagesPath": "C:\\Users\\Gamer\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -71,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

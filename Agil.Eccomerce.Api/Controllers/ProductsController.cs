@@ -14,12 +14,20 @@ namespace Agil.Eccomerce.Api.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        private readonly DBContext _context;
+
+        public ProductsController(DBContext context)
+        {
+            _context = context;
+        }
 
         // GET api/<ProductsController>
         [HttpGet]
         public string GetProducts()
         {
-            return context.products;
+            var prueba = _context.Producto+"";
+
+            return prueba;
         }
 
         // GET api/<ProductsController>/productId
