@@ -21,13 +21,11 @@ namespace Agil.Eccomerce.Api.Controllers
             _context = context;
         }
 
-        // GET api/<ProductsController>
+        // GET: api/<ProductsController>
         [HttpGet]
-        public string GetProducts()
+        public IEnumerable<Product> GetProducts()
         {
-            var prueba = _context.Producto+"";
-
-            return prueba;
+            return _context.Producto;
         }
 
         // GET api/<ProductsController>/productId
