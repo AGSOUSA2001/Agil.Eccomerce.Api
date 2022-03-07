@@ -23,29 +23,47 @@ namespace Agil.Eccomerce.Api.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public IEnumerable<Product> GetProducts()
+        public ActionResult<IEnumerable<Product>> GetProducts()
         {
-            return _context.Producto;
+            if (_context.Producto.Any())
+                return Ok(_context.Producto);
+            else
+                return NoContent();
         }
 
         // GET api/<ProductsController>/productId
         [HttpGet("{id}")]
-        public string GetProductById(int id)
+        public ActionResult GetProductById(int id)
         {
-            return "value";
+            if (_context.Producto.Any(p => p.Id == id))
+                return Ok(_context.Producto.FirstOrDefault(p => p.Id == id));
+            else
+                return NoContent();
         }
 
         // GET api/<ProductsController>/categoryId
         [HttpGet("category/{id}")]
-        public string GetProductByCategoryId(Category id)
+        public ActionResult GetProductByCategoryId(int id)
         {
-            return "value";
+            if (_context.Producto.Any(c => c.CategoryId == id))
+                return Ok(_context.Producto.FirstOrDefault(c => c.CategoryId == id));
+            else
+                return NoContent();
         }
 
         // POST api/<ProductsController>
         [HttpPost]
-        public void Add([FromBody] Product product)
+        public IActionResult Add([FromBody] Product product)
         {
+            if (!_context.Producto.Any(p => p.Id == product.Id))
+            {
+                _context.Producto.Add(product);
+                return Ok();
+            }
+            else
+            {
+                return BadRequest($"Exists a province with id{product.Id}");
+            }
         }
 
         // PUT api/<ProductsController>/productId
