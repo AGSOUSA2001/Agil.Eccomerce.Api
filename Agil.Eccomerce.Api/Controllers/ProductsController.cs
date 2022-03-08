@@ -58,24 +58,34 @@ namespace Agil.Eccomerce.Api.Controllers
             if (!_context.Producto.Any(p => p.Id == product.Id))
             {
                 _context.Producto.Add(product);
+                _context.SaveChanges();
                 return Ok();
+                
             }
             else
             {
                 return BadRequest($"Exists a province with id{product.Id}");
             }
+            
         }
 
         // PUT api/<ProductsController>/productId
         [HttpPut("{id}")]
         public void Update(int id, [FromBody] Product product)
         {
+            var ProductToUpdate = _context.Producto.Single(p => p.Id == id);
+            _context.Producto.Remove(ProductToUpdate);
+            _context.Producto.Add(product);
+            _context.SaveChanges();
         }
 
         // DELETE api/<ProductsController>/productId
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var ProductToDelete = _context.Producto.Single(p => p.Id == id);
+            _context.Producto.Remove(ProductToDelete);
+            _context.SaveChanges();
         }
     }
 }

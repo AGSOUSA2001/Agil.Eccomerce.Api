@@ -13,7 +13,7 @@ namespace Agil.Eccomerce.Api.Data
 
         public DbSet<Category> Categoria { get; set; }
 
-        public DbSet<Product> Producto { get; set; }
+        public DbSet<Product> Producto { get; set; } 
 
         public DBContext()
         {
