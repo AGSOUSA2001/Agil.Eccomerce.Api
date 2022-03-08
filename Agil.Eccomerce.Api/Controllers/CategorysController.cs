@@ -20,36 +20,62 @@ namespace Agil.Eccomerce.Api.Controllers
         {
             _context = context;
         }
+
         // GET: api/<CategorysController>
         [HttpGet]
-        public IEnumerable<Category> Get()
+        public ActionResult<IEnumerable<Category>> GetCategorys()
         {
-            return _context.Categoria;
+            if (_context.Categoria.Any())
+                return Ok(_context.Categoria);
+            else
+                return NoContent();
         }
 
-        // GET api/<CategorysController>/5
+        // GET api/<CategorysController>/categoryId
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult GetCategoryById(int id)
         {
-            return "value";
+            if (_context.Categoria.Any(c => c.Id == id))
+                return Ok(_context.Categoria.FirstOrDefault(c => c.Id == id));
+            else
+                return NoContent();
         }
 
         // POST api/<CategorysController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Add([FromBody] Category category)
         {
+            if (!_context.Categoria.Any(c => c.Id == category.Id))
+            {
+                _context.Categoria.Add(category);
+                _context.SaveChanges();
+                return Ok();
+
+            }
+            else
+            {
+                return BadRequest($"Exists a province with id{category.Id}");
+            }
+
         }
 
-        // PUT api/<CategorysController>/5
+        // PUT api/<CategorysController>/categoryId
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Update(int id, [FromBody] Category category)
         {
+            var CategoryToUpdate = _context.Categoria.Single(c => c.Id == id);
+            _context.Categoria.Remove(CategoryToUpdate);
+            _context.Categoria.Add(category);
+            _context.SaveChanges();
         }
 
-        // DELETE api/<CategorysController>/5
+        // DELETE api/<CategorysController>/categoryId
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var CategoryToDelete = _context.Categoria.Single(c => c.Id == id);
+            _context.Categoria.Remove(CategoryToDelete);
+            _context.SaveChanges();
         }
     }
 }
