@@ -54,28 +54,46 @@ namespace Agil.Eccomerce.Api.Controllers
             }
             else
             {
-                return BadRequest($"Exists a province with id{category.Id}");
+                return BadRequest($"Exists a category with id{category.Id}");
             }
 
         }
 
         // PUT api/<CategorysController>/categoryId
         [HttpPut("{id}")]
-        public void Update(int id, [FromBody] Category category)
+        public IActionResult Update(int id, [FromBody] Category category)
         {
-            var CategoryToUpdate = _context.Categoria.Single(c => c.Id == id);
-            _context.Categoria.Remove(CategoryToUpdate);
-            _context.Categoria.Add(category);
-            _context.SaveChanges();
+            if (_context.Categoria.Any(c => c.Id == id))
+            {
+                var CategoryToUpdate = _context.Categoria.Single(c => c.Id == id);
+                _context.Categoria.Remove(CategoryToUpdate);
+                _context.Categoria.Add(category);
+                _context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest($"Don't exist a category with id {id}");
+            }
+
         }
 
         // DELETE api/<CategorysController>/categoryId
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            var CategoryToDelete = _context.Categoria.Single(c => c.Id == id);
-            _context.Categoria.Remove(CategoryToDelete);
-            _context.SaveChanges();
+            if (_context.Categoria.Any(c => c.Id == id))
+            {
+                var CategoryToDelete = _context.Categoria.Single(c => c.Id == id);
+                _context.Categoria.Remove(CategoryToDelete);
+                _context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest($"Don't exist a category with id {id}");
+            }
+
         }
     }
 }
