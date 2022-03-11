@@ -43,10 +43,10 @@ namespace Agil.Eccomerce.Api.Controllers
 
         // GET api/<ProductsController>/categoryId
         [HttpGet("category/{id}")]
-        public ActionResult GetProductByCategoryId(int id)
+        public ActionResult<IEnumerable<Product>> GetProductsByCategoryId(int id)
         {
             if (_context.Producto.Any(c => c.CategoryId == id))
-                return Ok(_context.Producto.FirstOrDefault(c => c.CategoryId == id));
+                return Ok(_context.Producto.Where(c => c.CategoryId == id));
             else
                 return NoContent();
         }

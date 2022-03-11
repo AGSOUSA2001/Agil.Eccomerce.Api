@@ -13,8 +13,8 @@ namespace Agil.Eccomerce.Api.Models
         public decimal Price { get; set; }
 
         public int CategoryId { get; set; }
-        /*[JsonIgnore]
-        public Category Category { get; set; }*/
+        [JsonIgnore]
+        public Category Category { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace Agil.Eccomerce.Api.Models
@@ -11,6 +12,6 @@ namespace Agil.Eccomerce.Api.Models
         public string Description { get; set; }
 
         [JsonIgnore]
-        public Product Products { get; set; }
+        public IEnumerable<Product> Products { get; set; }
     }
 }

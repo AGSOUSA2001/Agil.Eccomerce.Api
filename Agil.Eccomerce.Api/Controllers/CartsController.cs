@@ -22,7 +22,7 @@ namespace Agil.Eccomerce.Api.Controllers
         }
 
         // POST api/<CartsController>
-        [HttpPost]
+        /*[HttpPost]
         public IActionResult Add([FromBody] int id)
         {
             if (!_context.Producto.Any(p => p.Id == id))
@@ -37,7 +37,7 @@ namespace Agil.Eccomerce.Api.Controllers
                 return BadRequest($"Exists a province with id{category.Id}");
             }
 
-        }
+        }*/
 
         // GET api/<CartsController>/5
         [HttpGet("{id}")]

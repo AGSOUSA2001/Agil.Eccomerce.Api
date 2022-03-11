@@ -1389,19 +1389,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gamer\\.nuget\\packages\\": {}
+    "C:\\Users\\A8-PC100\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
+      "projectUniqueName": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
       "projectName": "Agil.Eccomerce.Api",
-      "projectPath": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
-      "packagesPath": "C:\\Users\\Gamer\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Gamer\\Desktop\\DAW\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\obj\\",
+      "projectPath": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api.csproj",
+      "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
+      "outputPath": "D:\\AndresGilDAW\\EC\\Agil.Eccomerce.Api\\Agil.Eccomerce.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1413,7 +1413,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1425,7 +1424,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
@@ -1460,7 +1458,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
